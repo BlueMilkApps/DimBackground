@@ -74,11 +74,6 @@
                                     <constraint firstItem="uSa-qx-Rc9" firstAttribute="centerX" secondItem="mBV-MV-9Di" secondAttribute="centerX" id="EcJ-eV-30A"/>
                                     <constraint firstAttribute="bottom" secondItem="uSa-qx-Rc9" secondAttribute="bottom" constant="8" id="jDm-jh-PNv"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -87,6 +82,9 @@
                             <constraint firstItem="mBV-MV-9Di" firstAttribute="centerY" secondItem="JU9-sH-IBB" secondAttribute="centerY" id="6fH-R6-cgA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="popupView" destination="mBV-MV-9Di" id="ON9-LT-dHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="787-bu-la6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eZA-WF-IMf" userLabel="Exit" sceneMemberID="exit"/>

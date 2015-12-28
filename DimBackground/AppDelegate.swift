@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  DimBackground
-//
-//  Created by Chris Forant on 12/27/15.
-//  Copyright © 2015 Totem. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

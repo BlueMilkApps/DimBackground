@@ -1,14 +1,6 @@
-//
-//  PrimaryViewController.swift
-//  DimBackground
-//
-//  Created by Chris Forant on 12/27/15.
-//  Copyright © 2015 Totem. All rights reserved.
-//
-
 import UIKit
 
-class PrimaryViewController: UIViewController {
+class PrimaryViewController: UIViewController, Dimmable {
     
     let dimLevel: CGFloat = 0.5
     let dimSpeed: Double = 0.5
@@ -22,6 +14,6 @@ class PrimaryViewController: UIViewController {
     }
     
     @IBAction func unwindFromSecondary(segue: UIStoryboardSegue) {
-        dimmer(.Out, color: nil, alpha: 0, speed: dimSpeed)
+        dimmer(.Out, color: nil, alpha: nil, speed: dimSpeed)
     }
 }

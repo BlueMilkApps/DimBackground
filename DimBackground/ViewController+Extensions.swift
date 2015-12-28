@@ -1,29 +1,25 @@
-//
-//  ViewController+Dimmer.swift
-//  DimBackground
-//
-//  Created by Chris Forant on 12/28/15.
-//  Copyright © 2015 Totem. All rights reserved.
-//
-
 import UIKit
 
-extension UIViewController {
-    
-    enum DimmerDirection {
-        case In, Out
-    }
-    
-    func dimmer(direction: DimmerDirection, color: UIColor?, alpha: CGFloat?, speed: Double?) {
+enum Direction { case In, Out }
+
+protocol Dimmable { }
+
+extension Dimmable where Self: UIViewController {
+    func dimmer(direction: Direction, color: UIColor?, alpha: CGFloat?, speed: Double?) {
         
         switch direction {
         case .In:
             
-            // Create and add dim view
+            // Create and add a dim view
             let dimView = UIView(frame: view.frame)
             dimView.backgroundColor = color ?? UIColor.blackColor()
             dimView.alpha = 0.0
             view.addSubview(dimView)
+            
+            // Deal with Auto Layout
+            dimView.translatesAutoresizingMaskIntoConstraints = false
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[dimView]|", options: [], metrics: nil, views: ["dimView": dimView]))
+            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[dimView]|", options: [], metrics: nil, views: ["dimView": dimView]))
             
             // Animate alpha (the actual "dimming" effect)
             UIView.animateWithDuration(speed ?? 0) { () -> Void in
