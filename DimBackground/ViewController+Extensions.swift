@@ -20,15 +20,10 @@ extension UIViewController {
         case .In:
             
             // Create and add dim view
-            let dimView = UIView()
+            let dimView = UIView(frame: view.frame)
             dimView.backgroundColor = color ?? UIColor.blackColor()
             dimView.alpha = 0.0
             view.addSubview(dimView)
-            
-            // Deal with autolayout
-            dimView.translatesAutoresizingMaskIntoConstraints = false
-            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[dimView]|", options: [], metrics: nil, views: ["dimView": dimView]))
-            view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[dimView]|", options: [], metrics: nil, views: ["dimView": dimView]))
             
             // Animate alpha (the actual "dimming" effect)
             UIView.animateWithDuration(speed ?? 0) { () -> Void in
