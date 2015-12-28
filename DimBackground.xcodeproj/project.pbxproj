@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		D6BB0AE61C30731800EC0790 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB0AE51C30731800EC0790 /* AppDelegate.swift */; };
-		D6BB0AE81C30731800EC0790 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB0AE71C30731800EC0790 /* ViewController.swift */; };
 		D6BB0AEB1C30731800EC0790 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BB0AE91C30731800EC0790 /* Main.storyboard */; };
 		D6BB0AED1C30731800EC0790 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BB0AEC1C30731800EC0790 /* Assets.xcassets */; };
 		D6BB0AF01C30731800EC0790 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BB0AEE1C30731800EC0790 /* LaunchScreen.storyboard */; };
+		D6BB0AF81C30734400EC0790 /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB0AF71C30734400EC0790 /* PrimaryViewController.swift */; };
+		D6BB0AFA1C30735200EC0790 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB0AF91C30735200EC0790 /* SecondaryViewController.swift */; };
+		D6BB0AFC1C317DEE00EC0790 /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BB0AFB1C317DEE00EC0790 /* ViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6BB0AE21C30731800EC0790 /* DimBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DimBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BB0AE51C30731800EC0790 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6BB0AE71C30731800EC0790 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6BB0AEA1C30731800EC0790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6BB0AEC1C30731800EC0790 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6BB0AEF1C30731800EC0790 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6BB0AF11C30731800EC0790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BB0AF71C30734400EC0790 /* PrimaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryViewController.swift; sourceTree = "<group>"; };
+		D6BB0AF91C30735200EC0790 /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		D6BB0AFB1C317DEE00EC0790 /* ViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				D6BB0AE51C30731800EC0790 /* AppDelegate.swift */,
-				D6BB0AE71C30731800EC0790 /* ViewController.swift */,
+				D6BB0AF71C30734400EC0790 /* PrimaryViewController.swift */,
+				D6BB0AF91C30735200EC0790 /* SecondaryViewController.swift */,
+				D6BB0AFB1C317DEE00EC0790 /* ViewController+Extensions.swift */,
 				D6BB0AE91C30731800EC0790 /* Main.storyboard */,
 				D6BB0AEC1C30731800EC0790 /* Assets.xcassets */,
 				D6BB0AEE1C30731800EC0790 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6BB0AE81C30731800EC0790 /* ViewController.swift in Sources */,
 				D6BB0AE61C30731800EC0790 /* AppDelegate.swift in Sources */,
+				D6BB0AF81C30734400EC0790 /* PrimaryViewController.swift in Sources */,
+				D6BB0AFC1C317DEE00EC0790 /* ViewController+Extensions.swift in Sources */,
+				D6BB0AFA1C30735200EC0790 /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
