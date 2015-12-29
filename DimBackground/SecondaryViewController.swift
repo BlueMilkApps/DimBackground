@@ -7,7 +7,7 @@ class SecondaryViewController: UIViewController {
         super.viewDidLoad()
         popupView.layer.cornerRadius = 10
         popupView.layer.borderColor = UIColor.blackColor().CGColor
-        popupView.layer.borderWidth = 0.5
+        popupView.layer.borderWidth = 0.25
         popupView.layer.shadowColor = UIColor.blackColor().CGColor
         popupView.layer.shadowOpacity = 0.6
         popupView.layer.shadowRadius = 15

@@ -51,14 +51,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBV-MV-9Di">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popup View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj3-mt-3py">
-                                        <rect key="frame" x="101" y="8" width="95" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSa-qx-Rc9">
-                                        <rect key="frame" x="130.5" y="262" width="39" height="30"/>
+                                        <rect key="frame" x="130" y="262" width="39" height="30"/>
                                         <state key="normal" title="Close">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -66,20 +60,38 @@
                                             <segue destination="eZA-WF-IMf" kind="unwind" unwindAction="unwindFromSecondary:" id="K1r-AV-tZB"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popup View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj3-mt-3py">
+                                        <rect key="frame" x="81" y="8" width="138" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="0fy-rP-GTN"/>
                                     <constraint firstAttribute="width" constant="300" id="8Tt-LL-UO4"/>
                                     <constraint firstItem="uSa-qx-Rc9" firstAttribute="centerX" secondItem="mBV-MV-9Di" secondAttribute="centerX" id="EcJ-eV-30A"/>
+                                    <constraint firstItem="Jj3-mt-3py" firstAttribute="centerX" secondItem="mBV-MV-9Di" secondAttribute="centerX" id="KXm-yi-zjp"/>
+                                    <constraint firstItem="Jj3-mt-3py" firstAttribute="top" secondItem="mBV-MV-9Di" secondAttribute="top" constant="8" id="Pp0-Z6-0BX"/>
                                     <constraint firstAttribute="bottom" secondItem="uSa-qx-Rc9" secondAttribute="bottom" constant="8" id="jDm-jh-PNv"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5a-7P-jc0">
+                                <rect key="frame" x="243.5" y="233" width="112" height="133.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mBV-MV-9Di" firstAttribute="centerX" secondItem="JU9-sH-IBB" secondAttribute="centerX" id="0eh-Kt-uoL"/>
+                            <constraint firstItem="x5a-7P-jc0" firstAttribute="centerX" secondItem="mBV-MV-9Di" secondAttribute="centerX" id="5aH-lU-MV3"/>
                             <constraint firstItem="mBV-MV-9Di" firstAttribute="centerY" secondItem="JU9-sH-IBB" secondAttribute="centerY" id="6fH-R6-cgA"/>
+                            <constraint firstItem="x5a-7P-jc0" firstAttribute="centerY" secondItem="mBV-MV-9Di" secondAttribute="centerY" id="BL6-61-1gO"/>
                         </constraints>
                     </view>
                     <connections>
