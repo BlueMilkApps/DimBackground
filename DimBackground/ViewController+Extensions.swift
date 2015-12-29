@@ -6,14 +6,14 @@ protocol Dimmable { }
 
 extension Dimmable where Self: UIViewController {
     
-    func dimmer(direction: Direction, color: UIColor?, alpha: CGFloat?, speed: Double?) {
+    func dim(direction: Direction, color: UIColor = UIColor.blackColor(), alpha: CGFloat = 0.0  , speed: Double = 0.0) {
         
         switch direction {
         case .In:
             
             // Create and add a dim view
             let dimView = UIView(frame: view.frame)
-            dimView.backgroundColor = color ?? UIColor.blackColor()
+            dimView.backgroundColor = color
             dimView.alpha = 0.0
             view.addSubview(dimView)
             
@@ -23,12 +23,12 @@ extension Dimmable where Self: UIViewController {
             view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[dimView]|", options: [], metrics: nil, views: ["dimView": dimView]))
             
             // Animate alpha (the actual "dimming" effect)
-            UIView.animateWithDuration(speed ?? 0) { () -> Void in
-                dimView.alpha = alpha ?? 0
+            UIView.animateWithDuration(speed) { () -> Void in
+                dimView.alpha = alpha
             }
             
         case .Out:
-            UIView.animateWithDuration(speed ?? 0, animations: { () -> Void in
+            UIView.animateWithDuration(speed, animations: { () -> Void in
                 self.view.subviews.last?.alpha = alpha ?? 0
                 }, completion: { (complete) -> Void in
                     self.view.subviews.last?.removeFromSuperview()
