@@ -5,7 +5,8 @@ enum Direction { case In, Out }
 protocol Dimmable { }
 
 extension Dimmable where Self: UIViewController {
-    func dimView(direction: Direction, color: UIColor?, alpha: CGFloat?, speed: Double?) {
+    
+    func dimmer(direction: Direction, color: UIColor?, alpha: CGFloat?, speed: Double?) {
         
         switch direction {
         case .In:

@@ -10,10 +10,10 @@ class PrimaryViewController: UIViewController, Dimmable {
     
     // MARK: - Segues
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        dimView(.In, color: nil, alpha: dimLevel, speed: dimSpeed)
+        dimmer(.In, color: nil, alpha: dimLevel, speed: dimSpeed)
     }
     
     @IBAction func unwindFromSecondary(segue: UIStoryboardSegue) {
-        dimView(.Out, color: nil, alpha: nil, speed: dimSpeed)
+        dimmer(.Out, color: nil, alpha: nil, speed: dimSpeed)
     }
 }
