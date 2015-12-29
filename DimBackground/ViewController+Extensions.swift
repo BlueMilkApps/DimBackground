@@ -6,7 +6,7 @@ protocol Dimmable { }
 
 extension Dimmable where Self: UIViewController {
     
-    func dim(direction: Direction, color: UIColor = UIColor.blackColor(), alpha: CGFloat = 0.0  , speed: Double = 0.0) {
+    func dim(direction: Direction, color: UIColor = UIColor.blackColor(), alpha: CGFloat = 0.0, speed: Double = 0.0) {
         
         switch direction {
         case .In:
